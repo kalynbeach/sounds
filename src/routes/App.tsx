@@ -32,7 +32,7 @@ function audioClipsReducer(audioClips: IAudioClip[], action: AudioClipAction) {
   }
 }
 
-export const App = () => {
+const App = () => {
   const [recorder, setRecorder] = useState<IRecorder>(initialRecorder);
   const [recording, setRecording] = useState(false);
   const [playing, setPlaying] = useState(false);
@@ -87,3 +87,5 @@ export const App = () => {
     </div>
   );
 };
+
+export default App;
