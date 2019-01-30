@@ -1,0 +1,9 @@
+
+.audio-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: $padding-sm;
+  background-color: $light-gray;
+}
