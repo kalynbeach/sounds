@@ -1,6 +1,8 @@
 # Sounds
 
-A simple soundboard of recorded audio clips
+A soundboard application.
+
+Built with Typescript, React, and Sass.
 
 ## TODO
 
