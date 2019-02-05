@@ -5,7 +5,6 @@ A simple soundboard of recorded audio clips
 ## TODO
 
 - TESTS!!
-- Migrate to Typescript
 - GraphQL (TypeGraphQL)
   - Schema Types
     - User
