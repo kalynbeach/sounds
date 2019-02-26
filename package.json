@@ -5,7 +5,9 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "lerna run start --scope=@sounds/client --parallel"
+    "start-dev": "lerna run start --scope=@sounds/client --parallel",
+    "start-server": "lerna run start --scope=@sounds/server --parallel",
+    "start-server-ts": "lerna run start-ts --scope=@sounds/server --parallel"
   },
   "devDependencies": {
     "lerna": "^3.13.0"

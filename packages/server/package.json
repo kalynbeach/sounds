@@ -2,7 +2,17 @@
   "name": "@sounds/server",
   "version": "1.0.0",
   "private": true,
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "start-ts": "ts-node-dev --respawn --transpileOnly src/index.js"
+  },
   "dependencies": {
-    "@sounds/client": "1.0.0"
+    "@sounds/client": "1.0.0",
+    "apollo-server": "^2.4.6",
+    "graphql": "^14.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10",
+    "ts-node-dev": "^1.0.0-pre.32"
   }
 }
