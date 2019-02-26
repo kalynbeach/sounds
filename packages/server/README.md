@@ -2,4 +2,6 @@
 
 ## TODO
 
-- Finish Typescript + Node setup
+- Work on GraphQL Schema
+- Build out resolvers
+- Reorgnize/restructure GraphQL code
