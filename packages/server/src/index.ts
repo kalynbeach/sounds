@@ -1,17 +1,13 @@
-const {
-  ApolloServer,
-  gql
-} = require('apollo-server')
+const { ApolloServer, gql } = require('apollo-server')
 
-const typeDefs = gql `
-
+const typeDefs = gql`
   type Error {
     field: String!
     message: String!
   }
 
   type RegisterResponse {
-    errors: [Error] 
+    errors: [Error]
     user: User
   }
 
@@ -51,7 +47,7 @@ const resolvers = {
     // TODO: Build out user resolver
     user: () => ({
       id: 1,
-      name: "kalyn"
+      name: 'kalyn'
     })
   },
   Mutation: {
@@ -60,7 +56,7 @@ const resolvers = {
       errors: null,
       user: {
         id: 1,
-        name: "kalyn"
+        name: 'kalyn'
       }
     }),
     // TODO: Build out user resolver
@@ -76,8 +72,6 @@ const server = new ApolloServer({
   resolvers
 })
 
-server.listen().then(({
-  url
-}) => {
-  console.log(`🚀  Server ready at ${url}`)
+server.listen().then(({ url }: { url: String }) => {
+  console.log(`🚀 Server ready at ${url}`)
 })

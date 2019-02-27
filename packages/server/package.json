@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "nodemon src/index.js",
-    "start-ts": "ts-node-dev --respawn --transpileOnly src/index.js"
+    "start-ts": "ts-node-dev --respawn --transpileOnly src/index.ts"
   },
   "dependencies": {
     "@sounds/client": "1.0.0",
